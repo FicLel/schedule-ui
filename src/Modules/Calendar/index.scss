@@ -1,0 +1,96 @@
+.calendar-table-container {
+  margin-top: 1rem;
+  margin-bottom: 5%;
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #787F85;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-table {
+  border-collapse: collapse;
+  width: 99%;
+}
+.calendar-table-header {
+  color: #787F85;
+  background: #16181ACC;
+  tr {
+    th:first-child {
+      width: 10%;
+      -webkit-border-top-left-radius: 10px;
+      -webkit-border-bottom-left-radius: 10px;
+      -moz-border-radius-topleft: 10px;
+      -moz-border-radius-bottomleft: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px; 
+    }
+    th:nth-last-child(1) {
+      -webkit-border-top-right-radius: 10px;
+      -webkit-border-bottom-right-radius: 10px;
+      -moz-border-radius-topright: 10px;
+      -moz-border-radius-bottomright: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    th:not(:first-child) {
+      width: 18%;
+    }
+    th {
+      padding: .5rem;
+    }
+  }
+}
+.calendar-table-body-row {
+  border-bottom: 1px solid #16181ACC;
+  .blank-space {
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .available-space {
+    min-height: 110px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 45px;
+  }
+  .available-space:hover {
+    background: rgba(23,22,37, .5);
+  }
+  .unavailable-space {
+    min-height: 110px;
+    cursor: not-allowed;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 45px;
+  }
+  .unavailable-space:hover {
+    color: white;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,0.7091211484593838) 0%, rgba(252,70,107,0.6615021008403361) 8%);
+  }
+  td {
+    text-align: center; 
+    vertical-align: middle;
+  }
+}
+.calendar-card-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 5rem;
+  height: 100%;
+  flex-direction: column;
+  align-content: space-between;
+}

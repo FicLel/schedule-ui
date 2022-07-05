@@ -1,0 +1,24 @@
+.selector-course-bar {
+  min-height: 100vh;
+  min-width: 95%;
+  border: 1px solid #787F85;
+  background: white;
+  .return-option {
+    padding: .5rem; 
+    cursor: pointer;
+    box-shadow: -1px 2px 2px #787F85;
+    z-index: 1;
+    &:hover {
+      color: blue;
+    }
+  } 
+  .course-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    gap: 10px;
+    overflow: auto;
+    max-height: 100vh;
+    z-index: 3;
+  }
+}
