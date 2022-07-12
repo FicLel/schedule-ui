@@ -7,6 +7,7 @@ import {Calendar} from './Modules/Calendar';
 import {GroupsList} from './Modules/GroupsList';
 import {TeacherCalendar} from './Modules/TeacherCalendar';
 import {Teacher} from './Modules/Teacher';
+import {Course} from './Modules/Course';
 import {
   Routes,
   Route,
@@ -24,6 +25,7 @@ function App() {
           <Route path='groups-list' element={<GroupsList />} />
           <Route path='teacher-calendar/:id' element={<TeacherCalendar />} />
           <Route path='teacher' element={<Teacher />}/>
+          <Route path='course' element={<Course />}/>
         </Routes>
     </Grid.Container>
   );

@@ -1,7 +1,7 @@
 import {useMemo, useState} from 'react';
 import { Grid, Card, Text, Dropdown, Button } from '@nextui-org/react';
 
-export const AssignDegreeGroup = ({visible, setVisible}) => {
+export const AssignDegreeGroup = ({course}) => {
   const [selected, setSelected] = useState(new Set(["text"]));
 
   const selectedValue = useMemo(
@@ -12,7 +12,7 @@ export const AssignDegreeGroup = ({visible, setVisible}) => {
     <Grid.Container css={{border: '1px solid #787F85', padding: '2%', margin: '0 5% 1% 5%', borderRadius: '8px'}}>
       <Grid.Container xs={6} css={{padding: '1%'}}>
         <Grid xs={12} css={{marginBottom: '10px'}}>
-          <Text b>Asignar Docente</Text>
+          <Text b>Asignar Docente {course}</Text>
         </Grid>
         <Grid xs={12} css={{marginBottom: '15px'}}>
           <Dropdown>

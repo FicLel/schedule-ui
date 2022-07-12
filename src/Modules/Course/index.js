@@ -70,8 +70,12 @@ export const Course = () => {
         </Text>
       </Grid>
       <CourseForm />
-      <CourseTable courses={courses} setCourse={setSelectedCourse} selectedCourse={selectedCourse}/>
-      <AssignDegreeGroup />
+      <CourseTable 
+        getFunction={getRequest}
+        courses={courses}
+        setCourse={setSelectedCourse}
+        selectedCourse={selectedCourse}/>
+      <AssignDegreeGroup course={selectedCourse}/>
       <ToastContainer />
     </Grid.Container>
   );

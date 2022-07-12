@@ -4,8 +4,10 @@ import {RenderCell} from './cell';
 export const CourseTable = ({
     courses = [],
     setCourse,
+    getFunction,
     selectedCourse,
   }) => {
+
   const columns = [
     {
       key: "name",
